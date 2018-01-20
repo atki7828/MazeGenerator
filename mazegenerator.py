@@ -17,7 +17,7 @@ RED = (255,0,0)
 
 def save():
     global i
-    pygame.image.save(screen,'/home/michael/Pictures/mazeframes/' + str(i) + '.png')
+    pygame.image.save(screen,'../mazeframes/' + str(i) + '.png')
     i += 1
 
 def recurse(x,y,grid):
@@ -126,6 +126,6 @@ while not done:
         if event.type == pygame.QUIT:
             done = True
 
-pygame.image.save(screen,'/home/michael/maze.png') 
+pygame.image.save(screen,'../maze.png') 
 pygame.quit()
 
